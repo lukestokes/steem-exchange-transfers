@@ -42,9 +42,9 @@
  
 To view the results, check out the following files:
  
-* 2016_STEEM_and_SBD_investors.txt
-* 2017_STEEM_and_SBD_investors.txt
-* 2018_STEEM_and_SBD_investors.txt
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2016_STEEM_and_SBD_investors.txt">2016_STEEM_and_SBD_investors.txt</a>
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2017_STEEM_and_SBD_investors.txt">2017_STEEM_and_SBD_investors.txt</a>
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2018_STEEM_and_SBD_investors.txt">2018_STEEM_and_SBD_investors.txt</a>
  
 Negative numbers mean the account withdrew more value from their account to an exchange than they deposited from an exchange in a given year. Positive numbers mean the account deposited more value to their account from an exchange they withdrew from their account.
 
