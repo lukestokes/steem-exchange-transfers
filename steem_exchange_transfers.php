@@ -140,6 +140,9 @@ class Investors {
 
 	public function processWithdraw($account, $date, $amount, $currency) {
 		$usd_amount = $amount * $this->getUSDSteemPrice($date);
+		if ($currency == "SBD") {
+			$usd_amount = $amount * $this->getUSDSBDPrice($date);
+		}
 		if ($currency == 'STEEM') {
 			$this->accounts[$account]['STEEM_withdrawals'] += $amount;
 		}
@@ -151,6 +154,9 @@ class Investors {
 	}
 	public function processDeposit($account, $date, $amount, $currency) {
 		$usd_amount = $amount * $this->getUSDSteemPrice($date);
+		if ($currency == "SBD") {
+			$usd_amount = $amount * $this->getUSDSBDPrice($date);
+		}
 		if ($currency == 'STEEM') {
 			$this->accounts[$account]['STEEM_deposits'] += $amount;
 		}
