@@ -28,7 +28,7 @@
 
 	The output of these queries are stored in the `<year>_<currency>_exchange_transfers.csv` files such as `2018_steem_exchange_transfers.csv`
 
-	The query looks at all transfers where either the from or to involves a known exchange wallet and sums those amounts per day, per account. For example, if you transfer 100 STEEM to an exchange and then transfer 90 STEEM back from an exchange on the same day, what will be recorded is a 10 STEEM withdrawal.
+	The query looks at all transfers where either the from or to involves a known exchange wallet and sums those amounts per day, per account. For example, if you transfer 100 STEEM to an exchange, then another 40 STEEM, and then transfer 90 STEEM back from an exchange on the same day, what will be recorded from the query is 140 STEEM in withdrawals and 90 STEEM in depsoits for that day. The code will then net those out for the account as a 50 STEEM withdrawal.
 
 * The `steem_exchange_transfers.php` script parses each day and keeps a running total of withdrawals and deposits for each account using USD values for STEEM or SBD on that day.
 
@@ -42,9 +42,9 @@
  
 To view the results, check out the following files:
  
-* 2016_STEEM_and_SBD_investors.txt
-* 2017_STEEM_and_SBD_investors.txt
-* 2018_STEEM_and_SBD_investors.txt
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2016_STEEM_and_SBD_investors.txt">2016_STEEM_and_SBD_investors.txt</a>
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2017_STEEM_and_SBD_investors.txt">2017_STEEM_and_SBD_investors.txt</a>
+* <a href="https://raw.githubusercontent.com/lukestokes/steem-exchange-transfers/master/2018_STEEM_and_SBD_investors.txt">2018_STEEM_and_SBD_investors.txt</a>
  
 Negative numbers mean the account withdrew more value from their account to an exchange than they deposited from an exchange in a given year. Positive numbers mean the account deposited more value to their account from an exchange they withdrew from their account.
 
